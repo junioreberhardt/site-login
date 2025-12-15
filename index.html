@@ -17,12 +17,26 @@
             <div class="login-form">
                 <h1>Login</h1>
                 <p>Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="login-field">
+                        <label for="email"><i class="fa-regular fa-face-smile"></i>Login</label>
+                        <input type="email" name="email" id="email" placeholder="seu@email.com.br" autocomplete="email"
+                            required maxlength="50">
+                    </div>
+                    <div class="login-field">
+                        <label for="password"><i class="fa-regular fa-eye-slash"></i>Senha</label>
+                        <input type="password" name="password" id="password" placeholder="sua senha"
+                            autocomplete="current-password" required minlength="6">
+                    </div>
+                    <input class="login-action" type="submit" value="Logar">
+                    <a class="login-action forgot" href="esqueci.html" alt="esqueci minha senha">
+                        Esqueci minha senha
+                    </a>
                 </form>
             </div>
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/1a1d4396f1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
